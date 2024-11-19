@@ -13,7 +13,7 @@ class QAService:
         """
         try:
             # Load vector store
-            os.environ["OPENAI_API_KEY"] = "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"
+            os.environ["OPENAI_API_KEY"] = "sk-xxx"
             embeddings = OpenAIEmbeddings()
             vector_store = FAISS.load_local(vector_store_path, embeddings)
             
